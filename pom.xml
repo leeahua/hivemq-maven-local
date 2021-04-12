@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>himq-local</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>9.4.24.v20191120</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>19.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>2.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+            <version>2.11.3</version>
+        </dependency>
+
+        <!--
+        dependencies {
+
+
+    compile("joda-time:joda-time:2.9.1")
+    compile("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.4.1")
+
+    compile("org.jetbrains.xodus:xodus-compress:1.0-SNAPSHOT")
+    compile("org.jetbrains.xodus:xodus-entity-store:1.0-SNAPSHOT")
+    compile("org.jetbrains.xodus:xodus-environment:1.0-SNAPSHOT")
+    compile("org.jetbrains.xodus:xodus-openAPI:1.0-SNAPSHOT")
+    compile("org.jetbrains.xodus:xodus-query:1.0-SNAPSHOT")
+    compile("org.jetbrains.xodus:xodus-utils:1.0-SNAPSHOT")
+    compile("org.jetbrains.xodus:xodus-vfs:1.0-SNAPSHOT")
+    -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jul-to-slf4j</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>1.7.12</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.1.3</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>1.10</version>
+        </dependency>
+        <!--
+    //logging
+    compile("org.slf4j:slf4j-api:1.7.12")
+    compile("org.slf4j:jul-to-slf4j:1.7.12")
+    compile("org.slf4j:jcl-over-slf4j:1.7.12")
+    compile("ch.qos.logback:logback-core:1.1.3")
+    compile("ch.qos.logback:logback-classic:1.1.3")
+
+    //config
+    compile("commons-configuration:commons-configuration:1.10")
+       -->
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.2.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google/com.google.inject -->
+      <!--  <dependency>
+            <groupId>com.google</groupId>
+            <artifactId>com.google.inject</artifactId>
+            <version>2.0.0.v201003051000</version>
+        </dependency>-->
+
+        <!-- <dependency>
+             <groupId>com.google.inject.extensions</groupId>
+             <artifactId>guice-multibindings</artifactId>
+             <version>4.2.3</version>
+         </dependency>-->
+        <!-- https://mvnrepository.com/artifact/com.google.inject.extensions/guice-multibindings -->
+        <!-- https://mvnrepository.com/artifact/com.google.inject.extensions/guice-multibindings -->
+        <!-- https://mvnrepository.com/artifact/com.google.inject.extensions/guice-multibindings -->
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-multibindings</artifactId>
+            <version>3.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-grapher</artifactId>
+            <version>4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.0.36.Final</version>
+        </dependency>
+       <!-- <dependency>
+            <groupId>bouncycastle</groupId>
+            <artifactId>bouncycastle-jce-jdk13</artifactId>
+            <version>112</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jaxrs</artifactId>
+            <version>3.0.19.Final</version>
+        </dependency>
+        <!-- <dependency>
+             <groupId>org.jboss.resteasy</groupId>
+             <artifactId>resteasy-g</artifactId>
+             <version>4.5.3.Final</version>
+         </dependency>-->
+        <dependency>
+            <groupId>org.jgroups</groupId>
+            <artifactId>jgroups</artifactId>
+            <version>3.6.6.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jgroups</groupId>
+            <artifactId>jgroups-raft</artifactId>
+            <version>1.0.2.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>com.esotericsoftware</groupId>
+            <artifactId>kryo</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>findbugs</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.54</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcmail-jdk16</artifactId>
+            <version>1.46</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-core</artifactId>
+            <version>3.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-logback</artifactId>
+            <version>3.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>net.openhft</groupId>
+            <artifactId>zero-allocation-hashing</artifactId>
+            <version>0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache-jgroupsreplication</artifactId>
+            <version>1.7</version>
+        </dependency>
+    </dependencies>
+    <repositories>
+        <!--<repository>
+
+        </repository>-->
+    </repositories>
+    <build>
+        <plugins>
+            <plugin>
+                <!-- 指定maven编译的jdk版本,如果不指定,maven3默认用jdk 1.5 maven2默认用jdk1.3 -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <!-- 一般而言，target与source是保持一致的，但是，有时候为了让程序能在其他版本的jdk中运行(对于低版本目标jdk，源代码中不能使用低版本jdk中不支持的语法)，会存在target不同于source的情况 -->
+                    <source>11</source> <!-- 源代码使用的JDK版本 -->
+                    <target>11</target> <!-- 需要生成的目标class文件的编译版本 -->
+                    <encoding>UTF-8</encoding><!-- 字符集编码 -->
+                    <verbose>true</verbose>
+                    <showWarnings>true</showWarnings>
+                    <fork>true</fork><!-- 要使compilerVersion标签生效，还需要将fork设为true，用于明确表示编译版本配置的可用 -->
+                    <executable><!-- path-to-javac --></executable><!-- 使用指定的javac命令，例如：<executable>${JAVA_1_4_HOME}/bin/javac</executable> -->
+                    <compilerVersion>1.3</compilerVersion><!-- 指定插件将使用的编译器的版本 -->
+                    <meminitial>128m</meminitial><!-- 编译器使用的初始内存 -->
+                    <maxmem>512m</maxmem><!-- 编译器使用的最大内存 -->
+                    <compilerArgument>-verbose -bootclasspath ${java.home}\lib\rt.jar</compilerArgument><!-- 这个选项用来传递编译器自身不包含但是却支持的参数选项 -->
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+</project>

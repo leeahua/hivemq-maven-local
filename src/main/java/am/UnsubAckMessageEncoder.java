@@ -1,0 +1,17 @@
+package am;
+
+import com.hivemq.spi.message.UnsubAck;
+import io.netty.buffer.ByteBuf;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.handler.codec.MessageToByteEncoder;
+
+public class UnsubAckMessageEncoder extends MessageToByteEncoder<UnsubAck> {
+    private static final byte FIXED_HEADER = -80;
+    private static final byte REMAINING_LENGTH = 2;
+
+    protected void encode(ChannelHandlerContext ctx, UnsubAck msg, ByteBuf out) {
+        out.writeByte(FIXED_HEADER);
+        out.writeByte(REMAINING_LENGTH);
+        out.writeShort(msg.getMessageId());
+    }
+}
